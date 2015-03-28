@@ -1,25 +1,79 @@
 .logo
 {
-    font-family: Menlo, Monaco, Courier New, monospace, serif;
-    font-size: 2.5em;
+    display: inline-block;
+    font-size: 1.5em;
     line-height: 1em;
     text-decoration: none;
 }
 
 .logo__symb
 {
-    color: #bd3613;
+    position: relative;
+    font-family: Menlo, Monaco, Courier New, monospace, serif;
+    display: inline-block;
+    vertical-align: top;
+    color: #ede8cf;
+    background: #042e3b;
     font-style: normal;
+    font-size: 1.5em;
+    width: 1.5em;
+    height: 1.2em;
+    line-height: 1.15;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* creates part of the curve */
+.logo__symb:before,
+.logo__symb:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -.15em;
+    left: 55%;
+    height: .3em;
+
+}
+
+.logo__symb:before {
+  border-left: .6em solid #042e3b;
+  background: #042e3b;
+  border-bottom-left-radius: 1.2em .9em;
+}
+
+/* creates part of the curved pointy bit */
+.logo__symb:after {
+  width: .6em;
+  background:#fff;
+  border-bottom-left-radius:40px 50px;
+  transform:translate(.3em, 0);
+}
+
+.logo__txt {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    max-width: 5em;
+    margin-left: 0.5em;
+    padding-top: .15em;
 }
 
 .logo__fr
 {
-    color: #859900;
+    display: inline-block;
+    color: #042e3b;
     font-style: normal;
 }
 
 .logo__bl
 {
-    color: #b58900;
+    display: inline-block;
+    color: #042e3b;
     font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        font-size: 1.7em;
+    }
 }

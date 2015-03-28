@@ -1,13 +1,25 @@
 .social-icons,
 .social-icons__item
 {
+    display: inline-block;
+    vertical-align: middle;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.social-icons {
+    padding: .7em 10px;
 }
 
 .social-icons__img
 {
     width: 30px;
     height: 30px;
+}
+
+@media screen and (min-width: 480px) {
+    .social-icons {
+        padding: 4px 10px;
+    }
 }

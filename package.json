@@ -8,14 +8,14 @@
   },
   "dependencies": {
     "bower-npm-install": "~0.5.1",
-    "docpad": "~6.69.2",
+    "docpad": "~6.78.1",
     "docpad-plugin-cleanurls": "~2.7.0",
     "docpad-plugin-eco": "~2.1.0",
-    "docpad-plugin-ghpages": "~2.4.3",
+    "docpad-plugin-ghpages": "~2.4.4",
     "docpad-plugin-grunt": "~2.1.1",
     "docpad-plugin-marked": "git://github.com/varya/docpad-plugin-marked.git#compiled",
     "docpad-plugin-moment": "~2.0.2",
-    "docpad-plugin-rss": "~2.1.4",
+    "docpad-plugin-rss": "~2.2.0",
     "docpad-plugin-services": "~2.6.0",
     "enb": "~0.13.2",
     "enb-bemxjst": "~1.2.0",
@@ -32,5 +32,8 @@
   "scripts": {
     "install": "node ./node_modules/bower-npm-install/bin/bower-npm-install",
     "start": "node_modules/docpad/bin/docpad-server"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "^0.6.1"
   }
 }

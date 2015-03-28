@@ -1,14 +1,35 @@
-.layout
-{
-    display: table;
+.layout {
+    text-align: center;
 }
 
 .layout__col
 {
-    display: table-cell;
+    margin: auto;
 }
 
-.layout__col_top
-{
-    vertical-align: top;
+@media screen and (min-width: 640px) {
+
+    .layout
+    {
+        display: table;
+        width: 100%;
+    }
+
+    .layout__col
+    {
+        display: table-cell;
+    }
+
+    .layout__col_left
+    {
+        text-align: left;
+        vertical-align: bottom;
+        min-width: 210px;
+    }
+
+    .layout__col_right
+    {
+        text-align: right;
+        vertical-align: bottom;
+    }
 }

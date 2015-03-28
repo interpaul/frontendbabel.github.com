@@ -23,10 +23,21 @@ module.exports = function(grunt) {
                     "out/": ["./CNAME"]
                 }
             }
+        },
+        watch: {
+          css: {
+            files: 'desktop.blocks/**/*.css',
+            tasks: ['default'],
+            options: {
+              livereload: true,
+            },
+          },
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
+    grunt.registerTask('default', ['shell', 'copy']);
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title><%= @hlp.pageTitle(@document) %></title>
     <link rel="stylesheet" type="text/css" href="/desktop.bundles/index/index.min.css">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
@@ -11,12 +12,12 @@
 </head>
 <body class="page">
     <header class="header layout">
-        <div class="layout__col">
+        <div class="layout__col layout__col_left">
             <a class="logo" href="/">
-                <i class="logo__symb">›</i> <i class="logo__fr">Frontend</i> <i class="logo__bl">Babel</i>
+                <i class="logo__symb">›</i><i class="logo__txt"><i class="logo__fr">Frontend</i> <i class="logo__bl">Babel</i></i>
             </a>
         </div>
-        <div class="layout__col">
+        <div class="layout__col layout__col_right">
             <ul class="site-menu">
             <% for page in @getCollection("menu").findAll({}, [{order:1}]).toJSON(): %>
                 <li class="site-menu__item <%- 'site-menu__item_current' if page.id == @document.id %>">
@@ -27,23 +28,23 @@
                 <% end %>
                 </li>
             <% end %>
-            </ul>
-        </div>
-        <div class="layout__col layout__col_top">
-            <ul class="social-icons">
-                <li class="social-icons__item">
-                    <a href="/rss.xml">
-                        <img class="social-icons__img"
-                             title="Get fresh articles with RSS"
-                             src="/desktop.blocks/social-icons/__rss/social-icons__rss.png"/>
-                    </a>
-                </li>
-                <li class="social-icons__item">
-                    <a href="https://twitter.com/frontendbabel">
-                        <img class="social-icons__img"
-                             title="Follow #FrontendBabel in Twitter and we will keep you updated"
-                             src="/desktop.blocks/social-icons/__twitter/social-icons__twitter.png"/>
-                    </a>
+                <li class="site-menu__item">
+                    <ul class="social-icons">
+                        <li class="social-icons__item">
+                            <a href="/rss.xml">
+                                <img class="social-icons__img"
+                                     title="Get fresh articles with RSS"
+                                     src="/desktop.blocks/social-icons/__rss/social-icons__rss.png"/>
+                            </a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a href="https://twitter.com/frontendbabel">
+                                <img class="social-icons__img"
+                                     title="Follow #FrontendBabel in Twitter and we will keep you updated"
+                                     src="/desktop.blocks/social-icons/__twitter/social-icons__twitter.png"/>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
