@@ -10,14 +10,15 @@
     background: #fff;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
-    max-width: 900px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
 }
 
 @media screen and (min-width: 768px) {
     .page {
-        padding: 0 60px;
+        border: 1px solid #F7F7F7;
+        border-width: 0 1px;
     }
 }
 

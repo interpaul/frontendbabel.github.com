@@ -1,14 +1,16 @@
 .header
 {
-    border: rgba(0,0,0, 0.1) solid;
+    border: #F7F7F7 solid;
     border-width: 0 0 1px 0;
-    padding: 1.25em 0;
+    padding: 1.25em 30px;
+    width: calc(100% - 60px);
     font-size: 18px;
 }
 
 @media screen and (min-width: 768px) {
 
     .header {
-        padding: 4em 0 2.5em;
+        padding: 4em 80px 2.5em;
+        width: calc(100% - 160px);
     }
 }

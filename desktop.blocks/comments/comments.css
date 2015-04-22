@@ -1,5 +1,7 @@
 .comments
 {
     display: block;
-    margin-top: 3em;
+    margin: 3em 0 0;
+    padding: 3em 30px 3em;
+    border-top: #F7F7F7 solid 1px;
 }

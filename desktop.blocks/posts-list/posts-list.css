@@ -7,14 +7,17 @@
 
 .posts-list__item
 {
-    margin: 0 0 2em;
+    padding: 2em 30px 3em;
+    border-bottom: 1px solid #F7F7F7;
 }
 
 .post-list__title
 {
     margin: 0;
     font-size: 1.4em;
-    font-weight: 300;
+    line-height: 1.2;
+    font-weight: 400;
+    display: inline;
 }
 
 .post-list__subtitle
@@ -27,4 +30,12 @@
 .post-list__meta
 {
     font-size: 0.8em;
+}
+
+@media screen and (min-width: 768px) {
+
+    .posts-list__item
+    {
+        padding: 3em 80px 5em;
+    }
 }

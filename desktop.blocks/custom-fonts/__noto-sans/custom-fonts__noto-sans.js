@@ -9,6 +9,6 @@ l.rel = 'stylesheet';
 h.appendChild(l);
 }
 
-addFont('http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic&subset=latin,latin-ext');
+addFont('http://fonts.googleapis.com/css?family=Noto+Sans:300,400,700,400italic,700italic&subset=latin,latin-ext');
 
 })(document);

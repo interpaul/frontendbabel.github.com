@@ -1,17 +1,16 @@
 .article-source
 {
-    background-color: #7294D4;
+    background-color: #E9F0F7;
     position: relative;
-    padding: 0.5em;
+    padding: 1.5em 30px;
     margin-top: 4em;
     border-radius: 2px;
+    text-align: center;
 }
 
 .article-source::before
 {
     content: 'Source';
-    color: #fff;
-    font-size: 21px;
     display: inline-block;
 }
 

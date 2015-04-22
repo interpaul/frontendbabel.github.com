@@ -1,8 +1,6 @@
 .credits
 {
-    display: table;
-    width: 100%;
-    margin-top: 2em;
+    padding: 30px;
 }
 
 .credits a
@@ -19,8 +17,6 @@
 {
     position: relative;
     margin-top: 3em;
-    display: table-cell;
-    width: 50%;
 }
 
 .credits__author::before
@@ -35,9 +31,6 @@
 {
     position: relative;
     margin-top: 3em;
-    display: table-cell;
-    width: 50%;
-    border-left: #FFF 1em solid;
 }
 
 
@@ -76,4 +69,18 @@
 {
     font-size: 0.8em;
     margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .credits
+    {
+        display: table;
+        width: calc(100% - 60px);
+    }
+    .credits__author,
+    .credits__translator
+    {
+        display: table-cell;
+        width: 50%;
+    }
 }

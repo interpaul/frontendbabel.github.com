@@ -1,16 +1,28 @@
 .content
 {
     position: relative;
-    margin-top: 1em;
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 .content code
 {
     font-family: Menlo, Monaco, Courier New, monospace, serif;
     font-size: 90%;
-    background-color: rgba(0,0,0, 0.05);
+    background-color: #f8f8f8;
     font-weight: 300;
     padding: 1px 5px;
+}
+
+.content a {
+    color: #005ECB;
+    text-decoration: none;
+    border-bottom: 1px solid #cae0eb;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        font-size: 20px;
+        line-height: 1.6;
+    }
 }
